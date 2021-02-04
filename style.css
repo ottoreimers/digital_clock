@@ -22,7 +22,12 @@ body {
 
 @media screen and (max-width: 414px) {
   #container {
-    margin-top: 300px;
-    font-size: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+    margin-top: 150px;
+    font-size: 80px;
+
   }
 }
