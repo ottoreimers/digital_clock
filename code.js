@@ -27,16 +27,15 @@ function digiTime() {
 digiTime();
 
 
-
+/**
+ * two functions working together to generate a random color.
+ */
 function changeColor() {
   document.getElementById('container').style.color = randomColor();
 }
 
 function randomColor() {
   return "#" + Math.floor(Math.random() * 16777215).toString(16);
-}
+} // This function is created by Paul Irish https://www.paulirish.com/2009/random-hex-color-code-snippets/
 
-/*
-  1. en funktion som ändrar till en färg på click.
-  2.
-*/
+
