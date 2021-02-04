@@ -7,21 +7,22 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 350px;
+  margin-left: 800px;
+  margin-right: 800px;
   color: aliceblue;
   transition: 0.5s;
   font-family: 'Libre Barcode 128 Text', cursive;
   font-size: 200px;
   cursor: pointer;
+
+}
+#container:hover {
+  transform: scale(1.2);
 }
 
-
-#myProgress {
-  width: 50%;
-  background-color: grey;
-}
-
-#myBar {
-  width: 1%;
-  height: 30px;
-  background-color: green;
+@media screen and (max-width: 414px) {
+  #container {
+    margin-top: 300px;
+    font-size: 120px;
+  }
 }
