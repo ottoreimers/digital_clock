@@ -7,27 +7,6 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 350px;
-}
-
-#hours {
-  color: aliceblue;
-  font-family: 'Libre Barcode 128 Text', cursive;
-  font-size: 200px;
-}
-
-#minutes {
-  color: aliceblue;
-  font-family: 'Libre Barcode 128 Text', cursive;
-  font-size: 200px;
-}
-
-#seconds {
-  color: aliceblue;
-  font-family: 'Libre Barcode 128 Text', cursive;
-  font-size: 200px;
-}
-
-#milli {
   color: aliceblue;
   font-family: 'Libre Barcode 128 Text', cursive;
   font-size: 200px;

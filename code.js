@@ -1,6 +1,5 @@
-const hour = document.querySelector('hour');
 
-function addZero(h) {
+function addZero(h) { //this function checks if time (h) is less then 10. If so it will add a zero infront of the time.
   if (h < 10) {
     h = '0' + h;
   }
@@ -10,7 +9,7 @@ function addZero(h) {
 function digiTime() {
   const now = new Date();
 
-  const showHour = addZero(now.getHours());
+  const showHour = addZero(now.getHours());                     // addZero wraps all the get functions
   document.getElementById('hours').innerHTML = showHour + ':';
 
   const showMin = addZero(now.getMinutes());
@@ -19,9 +18,10 @@ function digiTime() {
   const showSec = addZero(now.getSeconds());
   document.getElementById('seconds').innerHTML = showSec;
 
-  // const showMil = now.getMilliseconds();
+  // const showMil = now.getMilliseconds();                     // The font had some trouble to update miliseconds fast enough
   // document.getElementById('milli').innerHTML = showMil;
 
   setInterval('digiTime()', 1000);
 }
+
 digiTime();
