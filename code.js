@@ -39,3 +39,4 @@ function randomColor() {
 } // This function is created by Paul Irish https://www.paulirish.com/2009/random-hex-color-code-snippets/
 
 
+

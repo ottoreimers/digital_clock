@@ -7,11 +7,17 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 350px;
+  margin-left: 800px;
+  margin-right: 800px;
   color: aliceblue;
   transition: 0.5s;
   font-family: 'Libre Barcode 128 Text', cursive;
   font-size: 200px;
   cursor: pointer;
+
+}
+#container:hover {
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 414px) {
