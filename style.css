@@ -17,7 +17,18 @@ body {
 
 }
 #container:hover {
-  transform: scale(1.2);
+  /* transform: scale(1.2); */
+}
+
+#container2 {
+  font-family: 'Rokkitt', serif;
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 414px) {

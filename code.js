@@ -9,13 +9,22 @@ function addZero(h) { //this function checks if time (h) is less then 10. If so 
 function digiTime() {
   const now = new Date();
 
-  const showHour = addZero(now.getHours());                     // addZero wraps all the get functions
+  let showDay = addZero(now.getDay());
+  document.getElementById('day').innerHTML = showDay + '/';
+
+  let showDate = addZero(now.getUTCMonth());
+  document.getElementById('date').innerHTML = showDate + '/';
+
+  let showYear = addZero(now.getFullYear());
+  document.getElementById('year').innerHTML = showYear;
+
+  let showHour = addZero(now.getHours());                     // addZero wraps all the get functions
   document.getElementById('hours').innerHTML = showHour + ':';
 
-  const showMin = addZero(now.getMinutes());
+  let showMin = addZero(now.getMinutes());
   document.getElementById('minutes').innerHTML = showMin + ':';
 
-  const showSec = addZero(now.getSeconds());
+  let showSec = addZero(now.getSeconds());
   document.getElementById('seconds').innerHTML = showSec;
 
   // const showMil = now.getMilliseconds();                     // The font had some trouble to update miliseconds fast enough
@@ -32,6 +41,7 @@ digiTime();
  */
 function changeColor() {
   document.getElementById('container').style.color = randomColor();
+  document.getElementById('container2').style.color = randomColor();
 }
 
 function randomColor() {
