@@ -10,10 +10,10 @@ function digiTime() {
   const now = new Date();
 
   let showDay = addZero(now.getDay());
-  document.getElementById('day').innerHTML = showDay + '/';
+  document.getElementById('day').innerHTML = showDay + '-';
 
   let showDate = addZero(now.getUTCMonth());
-  document.getElementById('date').innerHTML = showDate + '/';
+  document.getElementById('date').innerHTML = showDate + '-';
 
   let showYear = addZero(now.getFullYear());
   document.getElementById('year').innerHTML = showYear;
